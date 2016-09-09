@@ -6,7 +6,7 @@ RUN apk add --no-cache --update libffi-dev py-imaging && rm -rf /var/cache/apk/*
 EXPOSE 8081
 COPY ./entrypoint.sh /
 
-ENV SICKRAGE_VERSION 2016.07.31-1
+ENV SICKRAGE_VERSION 2016.09.03-1
 
 RUN wget -q "https://github.com/SickRage/SickRage/archive/${SICKRAGE_VERSION}.tar.gz" \
   && tar xzf *.tar.gz && rm *.tar.gz \
