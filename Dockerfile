@@ -1,7 +1,7 @@
 FROM vladshub/python-virtualenv
 MAINTAINER Vladislav Shub <vlad6il@gmail.com>
 
-RUN apk add --no-cache --update libffi-dev py-imaging nodejs && rm -rf /var/cache/apk/*
+RUN apk add --no-cache --update libffi-dev py-imaging py-lxml nodejs && rm -rf /var/cache/apk/*
 
 EXPOSE 8081
 COPY entrypoint.sh /
