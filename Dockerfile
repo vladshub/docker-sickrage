@@ -6,7 +6,7 @@ RUN apk add --no-cache --update libffi-dev py-imaging py-lxml nodejs && rm -rf /
 EXPOSE 8081
 COPY entrypoint.sh /
 
-ENV SICKRAGE_VERSION v2018.02.26-2
+ENV SICKRAGE_VERSION v2018.07.21-1
 
 RUN wget -q "https://github.com/SickRage/SickRage/archive/${SICKRAGE_VERSION}.tar.gz" \
   && tar xzf *.tar.gz && rm *.tar.gz \
